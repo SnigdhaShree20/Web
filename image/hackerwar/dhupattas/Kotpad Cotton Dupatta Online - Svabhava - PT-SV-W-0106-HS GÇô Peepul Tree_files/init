@@ -1,0 +1,27 @@
+    if (document.getElementById('oxi-social-login')!==null) {
+        document.getElementById('oxi-social-login').innerHTML="<iframe id='social_login_frame' title='Social Login Frame' src='https://social-login.oxiapps.com/widget?site=peepultree.myshopify.com&vt=928355&parenturl="+document.location.href+"' style='width:100%;max-width:100%;padding-top:0px;margin-bottom:5px;border:0px;height:50px;' scrolling=no></iframe>";
+    }
+    var oxi_elms = document.querySelectorAll(".oxi-social-login");
+    for(var osli2 = 0; osli2 < oxi_elms.length; osli2++) {
+        oxi_elms[osli2].innerHTML="<iframe id='social_login_frame' title='Social Login Frame' src='https://social-login.oxiapps.com/widget?site=peepultree.myshopify.com&vt=928355&parenturl="+document.location.href+"' style='width:100%;max-width:100%;padding-top:0px;margin-bottom:5px;border:0px;height:50px;' scrolling=no></iframe>";
+    }
+        var resized = false;
+    var response = function(event) {
+        if (event.origin+'/'=="https://social-login.oxiapps.com/") {
+            var message = event.data+'';
+            var key = message.split(':')[0];
+            var value = message.split(':')[1];
+            if (key=="height") {
+                var oxi_iframe = document.getElementById('social_login_frame');
+                if (oxi_iframe && !resized) {
+                    resized = true;
+                    oxi_iframe.style.height = value + "px";
+                }
+            }
+        }
+    }
+    if (window.addEventListener) {
+        window.addEventListener('message', response, false);
+    } else {
+        window.attachEvent("onmessage", response);
+    }

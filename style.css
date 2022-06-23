@@ -8,9 +8,9 @@ body{
 }
 .header-section{
     width: 100%;
-    height: 100%;
-    /* background-image: url(image/b16.jpg); */
-    margin-top: 80px;
+    height: 900px;
+    background-image: url(image/img-20220623T203315Z-001/img/bg-1.png);
+    
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -85,5 +85,220 @@ body{
 }
 /* best selling */
 .best-selling{
+    position: relative;
+    padding: 60px 50px;
+}
+.section-title{
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.product-container{
+    display: flex;
+    justify-content: space-between;
+}
+.product-card{
+    border: 5px solid #d5be8b;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    background: #d5be8b;
+}
+.product-card:nth-child(even){
+    border-color: black;
+}
+.product-image{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: 00.5s;
+}
+.product-name{
+    position: absolute;
+    color: #d5be8b;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 25px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+.product-card:hover .product-name{
+    opacity: 1;
+}
+.product-card:hover .product-image{
+    opacity: 0;
+}
+.mid-section{
+    width: 100%;
+    height: 800px;
+    padding: 40px 5px;
+}
+.sec-item-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 20px;
+}
+.section-bg{
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.section-info{
+    width: 50%;
+    height: 100%;
+    background: white;
+    display: block;
+    margin-left: auto;
+    padding: 40px;
+    text-align: center;
+}
+.title{
+    font-size: 60px;
+    line-height: 100px;
+}
+.title span{
+    color: #d5be8b;
+}
+.info{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    line-height: 45px;
+    margin-top: 30px;
+    opacity: 0.5;
+}
+.image-midsection{
+    width: 100%;
+    height: 600px;
+    margin-top: 300px;
+    padding: 50px 5px;
     
+}
+.image-collage{
+    width: 100%;
+    height: 100%;
+    background-image: url(image/img-20220623T203315Z-001/img/bg-1.png);
+    background-size: cover;
+}
+.image-collection{
+    position: relative;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: white;
+    margin: auto;
+}
+.collage-image{
+    transition: .5s;
+    position: absolute;
+    object-fit: cover;
+}
+.collage-image:nth-child(1){
+    width: 350px;
+    height: 350px;
+    top: 20px;
+    left: 40px;
+}
+.collage-image:nth-child(2){
+    width: 250px;
+    height: 250px;
+    top: 200px;
+    left: 200px;
+}
+.collage-image:nth-child(3){
+    width: 250px;
+    height: 250px;
+    top: 100px;
+    left: 350px;
+}
+.collage-image:hover{
+    transform: translateY(-20%);
+}
+.review{
+    padding: 50px 5px;
+}
+.sec-title span{
+    color: #d5be8b;
+}
+.review-container{
+    display: flex;
+    margin: 50px;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.review-card{
+    width: 250px;
+    height: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.user-dp{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+}
+.user-dp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.user-dp::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    /* border: 4px solid white; */
+    border-radius: 50%;
+}
+.user-dp::after{
+    content: attr(data-rating);
+    position: relative;
+    bottom: 25px;
+    right: -70px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #d5be8b;
+}
+.review-title{
+    font-size: 20px;
+    line-height: 25px;
+    margin: 5px 0;
+    text-transform: capitalize;
+}
+.u-review{
+    opacity: 0.5;
+}
+.end{
+    padding: 50px 5px;
+    margin-bottom:230px;
+}
+.end .sec-item-container{
+    height: 400px;
+}
+.end .section-info{
+    margin: 0;
+
+}
+.end .title{
+    font-size: 100px;
+    line-height: 140px;
+}
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    /* background: white; */
+    width: 100%;
+    
+    /* line-height: 50px; */
+    text-align: center;
+    opacity: 1;
 }
