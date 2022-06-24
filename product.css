@@ -1,0 +1,119 @@
+.product-detail{
+    width: 100%;
+    margin-top: 120px;
+    padding: 0 5vw;
+    display: flex;
+    gap: 40px;
+}
+.product-image{
+    width: 70%;
+    height: 600px;
+    object-fit: cover;
+
+}
+.product-title{
+    font-size: 60px;
+
+}
+.product-description{
+    margin: 30px 0;
+    font-family: 'lato', sans-serif;
+    opacity: 0.5;
+    font-size: 20px;
+    line-height: 30px;
+}
+.rating{
+    display: flex;
+}
+.rating .star{
+    width: 30px;
+    height: 30px;
+}
+.rating-count{
+    font-family: 'lato', sans-serif;
+    opacity: 0.4;
+    font-size: 14px;
+    line-height: 40px;
+    margin-left: 20px;
+}
+.price{
+    font-size: 60px;
+    margin: 20px 0;
+}
+.button{
+    padding: 15px 40px;
+    border: none;
+    color: white;
+    outline: none;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.product-btn-buy{
+    background-color: #d5be8b;
+}
+.product-btn-add{
+    background-color: black;
+}
+.detail-des, .review , .add-rev{
+    width: 100%;
+    padding: 100px 5vw 0;
+
+}
+.des{
+    font-family: 'lato',sans-serif;
+    line-height: 30px;
+    font-size: 20px;
+    opacity: 0.5;
+}
+.Review-Headline, .review-field{
+    width: 100%;
+    height: 40px;
+    border: 2px solid darkgray;
+    margin: 10px 0;
+    padding: 10px;
+    line-height: 10px;
+    font-family: 'lato', sans-serif;
+    color: black;
+    outline: none;
+    text-transform: capitalize;
+
+}
+::placeholder{
+    color: darkgray;
+}
+.review-field{
+    height: 160px;
+    resize: none;
+    padding: 0 10px;
+}
+.Review-Headline:focus, .review-field:focus{
+    border-color: #d5be8b;
+}
+.Review-Headline:focus::placeholder, .review-field:focus::placeholder{
+    border-color: #d5be8b;
+}
+.rating-text{
+    font-family: 'lato', sans-serif;
+    color: darkgray;
+    text-transform: uppercase;
+
+}
+.rating-star{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.add-review{
+    border: none;
+    outline: none;
+    background-color: #d5be8b;
+    padding: 10px 20px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-top: 30px;
+    cursor: pointer;
+}

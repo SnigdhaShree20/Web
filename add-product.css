@@ -1,0 +1,132 @@
+body{
+    padding: 100px 0;
+}
+.loader{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 100px;
+    z-index: 5;
+    display: none;
+}
+.title{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: -30px;
+    font-weight: 100px;
+    line-height: 3rem;
+    opacity: 0.7;
+}
+.error{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    min-width: 100px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'lato', sans-serif;
+    transition: 0.5s;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    z-index: 9;
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    border: 1px solid white;
+}
+.product-image{
+    background: white;
+    width: 100%;
+}
+.img-uploader{
+    width: 60%;
+    position: relative;
+    height: 600px;
+}
+.upload-overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-family: 'lato', sans-serif;
+    text-transform: capitalize;
+    opacity: 0;
+    transition: 0.5s;
+}
+.upload-overlay:hover{
+    opacity: 1;
+}
+.product-details{
+    width: 60%;
+    max-width: 60%;
+}
+.disable{
+    pointer-events: none;
+    filter: grayscale(1);
+}
+.btn-add{
+    background-color: #d5be8b;
+}
+*[contenteditable="true"]{
+    outline: none;
+    border: 2px solid #cacaca;
+    padding: 10px;
+
+}
+*[contenteditable="true"]:focus{
+    border-color: goldenrod;
+}
+.des{
+    height: 500px;
+    overflow: scroll;
+    white-space: pre-wrap;
+}
+.tags-section{
+    padding: 30px 5vw;
+}
+.text{
+    font-family: 'lato', sans-serif;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    opacity: .5;
+}
+.Tags{
+    height: 300px;
+    margin: 20px 0;
+    font-family: 'lato', sans-serif;
+}
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.add-product{
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    color: white;
+    background: #d5be8b;
+    cursor: pointer;
+    margin-right: 50px;
+}
+.draft-product{
+    background: #cacaca;
+    cursor: pointer;
+}

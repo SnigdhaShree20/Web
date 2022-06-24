@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Product Page</title>
+    <title>Product Page</title>
     <link rel="stylesheet" href="product.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="add-product.css">
 </head>
 <body>
     <!-- Navbar -->
-    <!-- <nav class="navbar bg">
+    <nav class="navbar bg">
         <ul class="links">
             <li class="link-item"><a href="#" class="link">Home</a></li>
             <li class="link-item"><a href="#" class="link">Product</a></li>
@@ -30,24 +29,14 @@
                 <img src="image/manage_accounts_FILL0_wght400_GRAD0_opsz48.png" class="user-icon" alt="">
             </div>
         </div>
-    </nav> -->
-    <img src="image/img-20220623T203315Z-001/img/loading-load.gif" class="loader" alt="">
-    <h1 class="title">Add Product</h1>
-    <div class="error">
-        <p>some error occured</p>
-    </div>
+    </nav>
     <!-- Product Details -->
     <section class="product-detail">
-        <!-- upload -->
-        <div class="img-uploader">
-            <input type="file" id="upload-image" accept="image/png, image/jpeg" hidden>
-            <label for="upload-image" class="upload-overlay">Upload Image</label>
-            <img class="product-image">
-        </div>
+        <img src="image/img-20220623T203315Z-001/img/product-1.png" alt="" class="product-image">
         <div class="product-details">
-            <h1 class="product-title" contenteditable="true" data-placeholder="title">Sofa</h1>
-            <p class="product-description" contenteditable="true" data-placeholder="product description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tenetur nesciunt magnam ipsa est eius dolor et in iure labore inventore, cupiditate neque. Illo deleniti ex ad impedit, doloremque harum.</p>
-            <div class="rating disable">
+            <h1 class="product-title">Sofa</h1>
+            <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tenetur nesciunt magnam ipsa est eius dolor et in iure labore inventore, cupiditate neque. Illo deleniti ex ad impedit, doloremque harum.</p>
+            <div class="rating">
                 <img src="image/img-20220623T203315Z-001/img/fill star.png" alt="">
                 <img src="image/img-20220623T203315Z-001/img/fill star.png" alt="">
                 <img src="image/img-20220623T203315Z-001/img/fill star.png" alt="">
@@ -55,8 +44,8 @@
                 <img src="image/img-20220623T203315Z-001/img/no fill star.png" alt="">
                 <span class="rating-count">4,023 reviews</span>
             </div>
-            <p class="price" contenteditable="true" data-placeholder="price without $"></p>
-            <div class="button disable">
+            <p class="price">$12</p>
+            <div class="button">
                 <button class="product-btn-buy">BUY</button>
                 <button class="product-btn-add">ADD TO CART</button>
             </div>
@@ -64,23 +53,11 @@
     </section>
     <section class="detail-des">
         <h1 class="section-title">Details</h1>
-        <p class="Des" contenteditable="true" data-placeholder="Description you can add, also can add images">
-
-        </p>
+        <p class="Des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus quia, molestias eum quidem ipsam, dolore consequuntur voluptatibus excepturi sapiente numquam delectus dolor debitis facilis iusto repellat animi, fugiat libero illo. <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis perferendis repellendus iusto itaque molestiae autem expedita! Impedit aspernatur vel dolorem! Odit sunt commodi dolor odio veritatis quis quam similique repudiandae.</p>
     </section>
-    <section class="tags-section">
-        <h1 class="section-title">Tags</h1>
-        <p class="text">enter related tags</p>
-        <p class="Tags" contenteditable="true" data-placeholder="Tags you can add">3 tags atleast
-
-        </p>
-    </section>
-    <div class="btn-wrapper">
-        <button class="product-btn add-product">add product</button>
-        <button class="product-btn draft-product">draft product</button>
-    </div>
-    <!-- review section -->
-     <!-- <section class="review">
+     <!-- review section -->
+     <section class="review">
         <h1 class="sec-title"> <span>Reviews</span> </h1>
         <div class="review-container">
             <div class="review-card">
@@ -105,9 +82,8 @@
             </div>
         </div>
     </section>
-
-    <-- Add Review -->
-    <!-- <section class="add-rev">
+    <!-- Add Review -->
+    <section class="add-rev">
         <h1 class="sec-title">Add a review</h1>
         <input type="text" class="Review-Headline" placeholder="ReviewHead">
         <textarea placeholder="review" class="review-field"></textarea>
@@ -120,9 +96,9 @@
             <img src="image/img-20220623T203315Z-001/img/no fill star.png" alt="" class="rating-star">
         </div>
         <button class="add-review">Add Review</button>
-    </section> -->
+    </section>
     <!-- Similar -->
-    <!-- <section class="best-selling">
+    <section class="best-selling">
         <h1 class="section-title">Similar Products</h1>
         <div class="product-container">
             <div class="product-card">
@@ -146,9 +122,9 @@
                 <p class="product-name">Waistcoat</p>
             </div>
         </div>
-    </section>  -->
+    </section>
 
     <footer>©️Made by StackOverFlowers 2022-23</footer>
-     <script src="add-product.js"></script>
+    <script src="product.js"></script>
 </body>
 </html>
